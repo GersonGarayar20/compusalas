@@ -23,7 +23,7 @@ const beneficios = [
 
 export default function Benefits() {
   return (
-    <section className="grid grid-cols-4">
+    <section className="grid md:grid-cols-4 grid-cols-2 gap-2">
       {beneficios.map(({ titulo, description }, i) => (
         <div key={i} className="">
           <h4 className="font-semibold">{titulo}</h4>

@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Nav from "./components/Nav";
+import Benefits from "./components/Benefits";
+import CategorySection from "./components/CategorySection";
 
 export default function Home() {
   return (
@@ -26,6 +28,8 @@ export default function Home() {
           <p>INTEL</p>
         </div>
       </section>
+      <Benefits />
+      <CategorySection />
     </main>
   );
 }
