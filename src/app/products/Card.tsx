@@ -1,19 +1,25 @@
 import React from "react";
 
-export default function Card() {
+interface CardInterface {
+  title: string;
+  image: string;
+  price: number;
+}
+
+export default function Card({ title, image, price }: CardInterface) {
   return (
     <div>
       <div className="aspect-square">
         <img
           className="w-full h-full object-cover rounded"
-          src="https://www.hd-tecnologia.com/imagenes/articulos/2022/05/TOP-5-mejores-laptops-para-estudiantes-en-2022-1.jpg"
+          src={image}
           alt=""
         />
       </div>
       <div className="py-4 flex justify-between">
         <div>
-          <h4 className="font-semibold text-lg">Producto</h4>
-          <p className="text-red-500">$123</p>
+          <h4 className="font-semibold text-lg">{title}</h4>
+          <p className="text-red-500">${price}</p>
         </div>
         <button>
           <svg
