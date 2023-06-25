@@ -59,7 +59,7 @@ const CardProduct = () => (
         <h4>titulo</h4>
         <p>$58</p>
       </div>
-      <button className="p-2 bg-slate-900 rounded">
+      <button className="w-10 h-10 flex justify-center items-center bg-slate-900 rounded-lg">
         <svg
           className="fill-slate-200"
           xmlns="http://www.w3.org/2000/svg"

@@ -19,7 +19,7 @@ export default function Brand() {
   return (
     <section className="py-16">
       <h2 className="font-bold text-2xl">Marcas</h2>
-      <div className="flex gap-4">
+      <div className="flex gap-4 overflow-x-auto">
         {marcas.map((el, i) => (
           <img key={i} className="w-32" src={el.image} alt="" />
         ))}

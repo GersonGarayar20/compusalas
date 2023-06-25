@@ -19,7 +19,7 @@ export default function Home() {
         <div className="bg-black/50 absolute top-0 w-full h-full">
           <div className="h-full flex flex-col justify-center items-center">
             <h2 className="text-2xl text-white">Computadoras</h2>
-            <button className="bg-slate-200 px-4 py-2 rounded">Shop now</button>
+            <Button title="Shop now" />
           </div>
         </div>
       </div>

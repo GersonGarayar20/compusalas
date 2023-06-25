@@ -1,16 +1,17 @@
 import React from "react";
+import Link from "next/link";
 
 export default function Nav() {
   return (
-    <header className="fixed z-50 top-0 left-0 w-full bg-white">
+    <header className="fixed z-50 top-0 left-0 w-full bg-white md:block hidden">
       <div className="px-4 py-8 max-w-6xl mx-auto flex justify-between items-center">
-        <h1 className="font-bold text-2xl text-slate-900">COMPUSALAS</h1>
+        <Link href="/">
+          <h1 className="font-bold text-2xl text-slate-900">COMPUSALAS</h1>
+        </Link>
 
         <nav>
           <ul className="flex gap-4">
-            <li>
-              <a href="#">Articulo</a>
-            </li>
+            <Link href="products">Products</Link>
             <li>
               <a href="#">Articulo</a>
             </li>
