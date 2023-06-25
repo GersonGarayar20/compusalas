@@ -4,6 +4,7 @@ import Benefits from "./components/Benefits";
 import CategorySection from "./components/CategorySection";
 import SliderProducts from "./components/SliderProducts";
 import Button from "./components/Button";
+import Newslatter from "./components/Newslatter";
 
 export default function Home() {
   return (
@@ -46,6 +47,7 @@ export default function Home() {
           <Button title="Grab it now" />
         </div>
       </section>
+      <Newslatter />
     </main>
   );
 }
