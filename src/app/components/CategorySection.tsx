@@ -24,7 +24,7 @@ const categorias = [
 
 export default function CategorySection() {
   return (
-    <section>
+    <section className="py-16">
       <h2 className="font-bold text-2xl">Categorias</h2>
       <div className="grid md:grid-cols-4 grid-cols-2 gap-4">
         {categorias.map(({ titulo, imagen }, i) => (

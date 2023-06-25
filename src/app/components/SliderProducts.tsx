@@ -8,8 +8,8 @@ export default function SliderProducts() {
   const right = () => (slider.current.scrollLeft += 256);
 
   return (
-    <section>
-      <div className="flex justify-between">
+    <section className="py-16">
+      <div className="flex justify-between py-8">
         <h2 className="font-bold text-2xl">Featured products</h2>
         <div>
           <button onClick={left}>
@@ -36,7 +36,7 @@ export default function SliderProducts() {
       </div>
       <div
         ref={slider}
-        className="flex flex-wrap flex-col gap-4 h-64 border overflow-x-scroll scroll-smooth"
+        className="flex flex-wrap flex-col gap-4 h-64 overflow-x-scroll scroll-smooth"
       >
         <CardProduct />
         <CardProduct />
@@ -50,6 +50,7 @@ export default function SliderProducts() {
 const CardProduct = () => (
   <div className="h-64 w-64">
     <img
+      className="w-full object-cover"
       src="https://www.hd-tecnologia.com/imagenes/articulos/2022/05/TOP-5-mejores-laptops-para-estudiantes-en-2022-1.jpg"
       alt=""
     />

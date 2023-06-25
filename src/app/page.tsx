@@ -5,6 +5,7 @@ import CategorySection from "./components/CategorySection";
 import SliderProducts from "./components/SliderProducts";
 import Button from "./components/Button";
 import Newslatter from "./components/Newslatter";
+import Brand from "./components/Brand";
 
 export default function Home() {
   return (
@@ -23,14 +24,7 @@ export default function Home() {
         </div>
       </div>
 
-      <section>
-        <h2 className="font-bold text-2xl">Marcas</h2>
-        <div className="flex gap-4">
-          <p>ASUS</p>
-          <p>AMD</p>
-          <p>INTEL</p>
-        </div>
-      </section>
+      <Brand />
       <Benefits />
       <CategorySection />
       <SliderProducts />
