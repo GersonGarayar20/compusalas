@@ -4,7 +4,6 @@ import Nav from "./components/Nav";
 export default function Home() {
   return (
     <main className="max-w-6xl mx-auto px-4 py-32">
-      <Nav />
       <div className="relative border h-96">
         <img
           className="w-full h-full object-cover"
@@ -18,6 +17,15 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <section>
+        <h2 className="font-bold text-2xl">Marcas</h2>
+        <div className="flex gap-4">
+          <p>ASUS</p>
+          <p>AMD</p>
+          <p>INTEL</p>
+        </div>
+      </section>
     </main>
   );
 }

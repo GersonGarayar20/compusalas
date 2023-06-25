@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Nav() {
   return (
-    <header className="fixed top-0 left-0 w-full bg-white">
+    <header className="fixed z-50 top-0 left-0 w-full bg-white">
       <div className="px-4 py-8 max-w-6xl mx-auto flex justify-between items-center">
         <h1 className="font-bold text-2xl text-slate-900">COMPUSALAS</h1>
 
