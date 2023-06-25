@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function page() {
@@ -77,9 +78,11 @@ export default function page() {
             <p>Grand total</p>
             <p>$2000</p>
           </div>
-          <button className="bg-slate-900 text-slate-200 w-full py-3 rounded">
-            Checkout now
-          </button>
+          <Link href="payment">
+            <button className="bg-slate-900 text-slate-200 w-full py-3 rounded">
+              Checkout now
+            </button>
+          </Link>
         </div>
       </aside>
     </main>
