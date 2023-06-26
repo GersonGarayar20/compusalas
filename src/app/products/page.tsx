@@ -15,7 +15,7 @@ async function getData() {
 
 export default async function page() {
   const data = await getData();
-  console.log(data.products[0]);
+  console.log(data.products[0]._id);
 
   return (
     <main className="max-w-6xl mx-auto px-4 py-32">
@@ -25,7 +25,13 @@ export default async function page() {
       <section>
         <div className="grid md:grid-cols-4 grid-cols-2 gap-4">
           {data.products.map(({ _id, title, price, image_url }: any) => (
-            <Card key={_id} title={title} image={image_url} price={price} />
+            <Card
+              key={_id}
+              id={_id}
+              title={title}
+              image={image_url}
+              price={price}
+            />
           ))}
         </div>
       </section>
