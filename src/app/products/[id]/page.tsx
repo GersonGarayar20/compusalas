@@ -1,5 +1,5 @@
-"use client";
 import React from "react";
+import BtnComprar from "./BtnComprar";
 
 async function getData(id: string) {
   const res = await fetch(
@@ -16,11 +16,6 @@ async function getData(id: string) {
 export default async function page({ params }: { params: { id: string } }) {
   const data = await getData(params.id);
   console.log(data.product);
-
-  const buy = () => {
-    //funcion añadir al carrito
-    console.log(data.product);
-  };
 
   return (
     <main className="max-w-6xl mx-auto px-4 py-32">
@@ -64,17 +59,7 @@ export default async function page({ params }: { params: { id: string } }) {
           <p className="text-2xl font-bold text-slate-900">
             ${data.product.price}
           </p>
-          <div className="flex">
-            <button className="p-2">-</button>
-            <p className="p-2">1</p>
-            <button className="p-2">+</button>
-          </div>
-          <button
-            className="px-6 py-3 bg-slate-900 text-slate-200 rounded"
-            onClick={buy}
-          >
-            comprar
-          </button>
+          <BtnComprar product={data.product} />
         </div>
       </section>
     </main>

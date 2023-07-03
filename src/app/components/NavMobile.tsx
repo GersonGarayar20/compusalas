@@ -42,7 +42,7 @@ export default function NavMobile() {
       {active && (
         <nav className="fixed z-40 bg-white w-full h-screen">
           <ul className="h-full flex flex-col items-center justify-center gap-4">
-            <Link href="products" onClick={handleClick}>
+            <Link href="/products" onClick={handleClick}>
               Products
             </Link>
             <li>

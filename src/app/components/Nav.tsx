@@ -11,7 +11,7 @@ export default function Nav() {
 
         <nav>
           <ul className="flex gap-4">
-            <Link href="products">Products</Link>
+            <Link href="/products">Products</Link>
             <li>
               <a href="#">Articulo</a>
             </li>
@@ -44,7 +44,7 @@ export default function Nav() {
               placeholder="Search"
             />
           </form>
-          <Link href="cart">
+          <Link href="/cart">
             <button className="p-2">
               <svg
                 className="fill-slate-500"
